@@ -1,0 +1,14 @@
+base: 'https://typo3-site2.ddev.site/'
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: us
+    hreflang: ''
+    websiteTitle: ''
+rootPageId: 1
+websiteTitle: 'Website title'

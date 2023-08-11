@@ -1,0 +1,10 @@
+tt_content {
+    testpackage_dataproccustom =< lib.contentElement
+    testpackage_dataproccustom {
+        templateName = Cllayout
+        dataProcessing.10 = CrossLink\TestPackage\DataProcessing\CustomDataProcessor
+        dataProcessing.10 {
+            as = testdata
+        }
+    }
+}
