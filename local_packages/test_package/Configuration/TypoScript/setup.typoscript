@@ -73,6 +73,7 @@ page {
                 includeSpacer = 1
                 as = mainnavigation
             }
+            30 = CrossLink\TestPackage\DataProcessing\CustomDataProcessor
         }
     }
 
@@ -164,6 +165,19 @@ page {
 
     includeJSFooter {
         test_package_scripts = EXT:test_package/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+lib.contentElement {
+    templateRootPaths {
+        200 = EXT:test_package/Resources/Private/Templates/ContentElements
+    }
+}
+
+tt_content {
+    testpackage_newcontentelement =< lib.contentElement
+    testpackage_newcontentelement {
+        templateName = NewContentElement
     }
 }
 

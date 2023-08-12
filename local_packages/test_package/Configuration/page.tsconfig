@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+    common {
+        elements {
+            testpackage_newcontentelement {
+                iconIdentifier = content-text
+                title = My content element title
+                description = My content element description
+                tt_content_defValues {
+                    CType = testpackage_newcontentelement
+                }
+            }
+        }
+
+        show := addToList(testpackage_newcontentelement)
+    }
+}
