@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  CrossLink\TestPackage\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  CrossLink\TestPackage\EventListener\JavaScript:
+    tags:
+      - name: event.listener
+        identifier: 'crossLinkJsListener'
+        event: TYPO3\CMS\Core\Page\Event\BeforeJavaScriptsRenderingEvent
