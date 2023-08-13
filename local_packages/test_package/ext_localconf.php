@@ -9,3 +9,18 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['test_package'] = 'EXT:test_packag
  * PageTS
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:test_package/Configuration/TsConfig/Page/All.tsconfig">');
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    'TestPackage',
+    'ClPlugin',
+    [\CrossLink\TestPackage\Controller\CustomController::class => 'show'],
+    [\CrossLink\TestPackage\Controller\CustomController::class => 'show'],
+);
+
+//(static function (): void {
+//    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+//        'TestPackage',
+//        'ClPlugin',
+//        'Cross-Link Plugin'
+//    );
+//})();

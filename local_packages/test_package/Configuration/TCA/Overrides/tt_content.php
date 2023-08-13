@@ -31,3 +31,9 @@ $GLOBALS['TCA']['tt_content']['types']['testpackage_newcontentelement'] = [
         ],
     ],
 ];
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    'TestPackage',
+    'ClPlugin',
+    'Cross-Link Plugin'
+);
