@@ -16,11 +16,3 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['test_package'] = 'EXT:test_packag
     [\CrossLink\TestPackage\Controller\CustomController::class => 'show'],
     [\CrossLink\TestPackage\Controller\CustomController::class => 'show'],
 );
-
-//(static function (): void {
-//    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-//        'TestPackage',
-//        'ClPlugin',
-//        'Cross-Link Plugin'
-//    );
-//})();

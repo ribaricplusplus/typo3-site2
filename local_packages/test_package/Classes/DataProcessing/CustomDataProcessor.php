@@ -2,6 +2,8 @@
 
 namespace CrossLink\TestPackage\DataProcessing;
 
+use CrossLink\TestPackage\Domain\Repository\SomethingRepository;
+
 class CustomDataProcessor implements \TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface
 {
 
